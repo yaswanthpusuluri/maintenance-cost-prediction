@@ -346,9 +346,13 @@ Estimated Maintenance Cost
 
 ## 🌐 Live Demo
 
-Google Cloud Deployment
+Render Deployment
 
-https://your-cloud-url
+[https://my-cloud-url](https://maintenance-pro-frontend.onrender.com)
+
+Backend API
+
+[https://my-backend-url.onrender.com/docs](https://maintenance-backend-pwvd.onrender.com)
 
 ---
 
@@ -360,13 +364,76 @@ Deployment Platform
 
 - Google Cloud Run
 
-Container Registry
+# Backend Deployment:
 
-- Google Artifact Registry
+Created a separate Render Web Service for the FastAPI backend.
 
-Runtime
+Selected Docker as the deployment environment.
 
-- Docker
+Used the root Dockerfile to build the backend image.
+
+Exposed the application on the Render-assigned PORT.
+
+The trained Linear Regression model and preprocessing pipeline are loaded during application startup.
+
+The /predict endpoint receives JSON data and returns predictions in JSON format.
+
+# Frontend Deployment:
+
+Created another Render Web Service for the Streamlit frontend.
+
+Used the frontend/ directory as the service root.
+
+Built the frontend using the Dockerfile inside the frontend folder.
+
+Streamlit is exposed on port 8501.
+
+The frontend sends prediction requests to the deployed backend using its public API URL.
+
+# Docker Configuration
+
+Two independent Docker images are used.
+
+Backend Container:
+
+Python 3.12 Slim
+FastAPI
+Uvicorn
+Scikit-learn
+Loads trained model
+Serves prediction API
+
+Frontend Container:
+
+Python 3.12 Slim
+Streamlit
+Pandas
+Requests
+Displays prediction interface
+Communicates with FastAPI backend
+
+Configuration Changes for Deployment
+
+The following changes were made before deployment:
+
+Updated the frontend API URL from localhost to the deployed backend URL.
+Added the required project files inside the frontend directory.
+Included the processed dataset required by the Streamlit application.
+Configured Dockerfiles separately for backend and frontend.
+Configured Render to build each service from the correct Dockerfile.
+Used separate Web Services for frontend and backend deployment.
+
+# Issues Solved During Deployment
+
+Several deployment issues were identified and resolved:
+
+Issue	Solution
+Localhost API URL	Replaced with Render backend URL
+Missing dataset in frontend container	Added processed_data.csv to the frontend directory
+Incorrect Docker build context	Configured the correct Root Directory and Dockerfile Path
+Missing requirements.txt during build	Updated Docker build paths
+Streamlit file watcher warnings	Disabled file watcher for production
+Backend communication issues	Updated API endpoint configuration
 
 ---
 
