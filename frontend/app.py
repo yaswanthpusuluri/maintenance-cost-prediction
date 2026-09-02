@@ -182,8 +182,7 @@ if st.button("Predict Repair Cost"):
     }
 
     try:
-        st.write("Calling Backend...")
-        st.write("https://maintenance-backend-pwwd.onrender.com/predict")
+        
 
         response = requests.post(
             "https://maintenance-backend-pwvd.onrender.com/predict",
