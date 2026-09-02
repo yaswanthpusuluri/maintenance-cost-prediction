@@ -348,11 +348,11 @@ Estimated Maintenance Cost
 
 Render Deployment
 
-[https://my-cloud-url](https://maintenance-pro-frontend.onrender.com)
+(https://maintenance-pro-frontend.onrender.com)
 
 Backend API
 
-[https://my-backend-url.onrender.com/docs](https://maintenance-backend-pwvd.onrender.com)
+(https://maintenance-backend-pwvd.onrender.com)
 
 ---
 
@@ -360,9 +360,9 @@ Backend API
 
 This application is containerized using Docker and deployed on Google Cloud Run.
 
-Deployment Platform
+# Deployment Platform
 
-- Google Cloud Run
+- Render Platform
 
 # Backend Deployment:
 
