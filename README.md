@@ -3,7 +3,7 @@
 A Machine Learning web application that predicts industrial machine maintenance costs using operational sensor data.
 
 
-![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)|![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn)|![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-FF4B4B?logo=streamlit)|![Docker](https://img.shields.io/badge/Docker-Container-blue?logo=docker)|![Docker Compose](https://img.shields.io/badge/Docker--Compose-Multi--Container-blue)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python) ![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn) ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi) ![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-FF4B4B?logo=streamlit) ![Docker](https://img.shields.io/badge/Docker-Container-blue?logo=docker) ![Docker Compose](https://img.shields.io/badge/Docker--Compose-Multi--Container-blue)
 
 
 ## 🎯 Project Goal
