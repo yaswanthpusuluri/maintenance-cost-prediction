@@ -327,17 +327,25 @@ Estimated Maintenance Cost
 
 ## 📷 Screenshots
 
-### Home Page
+## Home Page
 
 ![Home](images/home.png)
 
 ---
 
-### Architechture
+## Architechture
 
 ![Architechture](images/Architechture.png)
 
-### Prediction Result
+---
+
+## Deployment Architechture
+
+![Deployment Architechture](images/diployment.png)
+
+---
+
+## Prediction Result
 
 ![Prediction](images/prediction.png)
 
@@ -356,15 +364,15 @@ Backend API
 
 ---
 
-## ☁️ Deployment
+# ☁️ Deployment
 
 This application is containerized using Docker and deployed on Google Cloud Run.
 
-# Deployment Platform
+## Deployment Platform
 
 - Render Platform
 
-# Backend Deployment:
+## Backend Deployment:
 
 Created a separate Render Web Service for the FastAPI backend.
 
@@ -378,7 +386,7 @@ The trained Linear Regression model and preprocessing pipeline are loaded during
 
 The /predict endpoint receives JSON data and returns predictions in JSON format.
 
-# Frontend Deployment:
+## Frontend Deployment:
 
 Created another Render Web Service for the Streamlit frontend.
 
