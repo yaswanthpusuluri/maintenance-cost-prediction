@@ -184,7 +184,7 @@ if st.button("Predict Repair Cost"):
     try:
 
         response = requests.post(
-            "http://backend:8000/predict",
+            "https://maintenance-backend-pwvd.onrender.com",
             json=payload
         )
 
