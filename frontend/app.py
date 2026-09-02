@@ -21,7 +21,7 @@ st.title("🏭 Maintenance Cost Prediction")
 # Load Dataset
 # -----------------------------
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 
 DATA_PATH = BASE_DIR / "data" / "processed_data.csv"
 
